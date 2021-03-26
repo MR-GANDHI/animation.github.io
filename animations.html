@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        body {
+            background-image: url('background.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* position:relative;    */
+            /* width: 100%; */
+            height: 95vh;
+        }
+
+        .content {
+            padding: 30px;
+            margin: 50px;
+        }
+
+        .content h2 {
+            font-size: 50px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .content p {
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .navbar img {
+            width: 15%;
+            height: auto;
+        }
+
+        button {
+            background-color: transparent;
+            cursor: pointer;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            border-radius: 45px;
+            border: 2px solid;
+        }
+
+        .bubbles img {
+            width: 50px;
+            animation: bubble 8s linear infinite;
+
+        }
+
+        .bubbles {
+            width: 95%;
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: space-around;
+            bottom: - 0px;
+        }
+
+        @keyframes bubble {
+            0% {
+                transform: translateY(-0vh);
+                opacity: 1;
+            }
+
+            25% {
+                transform: translateY(-10vh);
+                opacity: 1;
+
+            }
+
+            50% {
+                transform: translateY(-50vh);
+                opacity: 1;
+            }
+
+            75% {
+                transform: translateY(-75vh);
+                opacity: 1;
+
+            }
+
+            100% {
+                transform: translateY(-0vh);
+                opacity: 0.5;
+
+            }
+        }
+
+        .bubbles img {
+            opacity: 0;
+        }
+
+        .bubbles img:nth-child(1) {
+            animation-delay: 2s;
+            width: 25px;
+
+        }
+
+        .bubbles img:nth-child(2) {
+            animation-delay: 4s;
+            width: 37px;
+        }
+
+        .bubbles img:nth-child(3) {
+            animation-delay: 6s;
+            width: 40px;
+        }
+
+        .bubbles img:nth-child(4) {
+            animation-delay: 8s;
+            width: 32px;
+        }
+
+        .bubbles img:nth-child(5) {
+            animation-delay: 10s;
+            width: 44px;
+        }
+
+        .bubbles img:nth-child(6) {
+            animation-delay: 11s;
+            width: 30px;
+        }
+
+        .bubbles img:nth-child(7) {
+            animation-delay: 9s;
+            width: 35px;
+        }
+
+        .bubbles img:nth-child(8) {
+            animation-delay: 7s;
+            width: 25px;
+        }
+
+        .bubbles img:nth-child(9) {
+            animation-delay: 5s;
+            width: 35px;
+        }
+
+        .bubbles img:nth-child(10) {
+            animation-delay: 3s;
+            width: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="navbar">
+            <img src="logoanimate.png" alt="Logo">
+            <button type="button">Contact Us</button>
+        </div>
+        <div class="content">
+            <h2>Welcome to my site</h2>
+            <p>Here you will see some nice Bubbles animations</p>
+        </div>
+        <div class="bubbles">
+            <img src="bubble.png" alt="">
+            <img src="bubble.png" alt="">
+            <img src="bubble.png" alt="">
+            <img src="bubble.png" alt="">
+            <img src="bubble.png" alt="">
+            <img src="bubble.png" alt="">
+            <img src="bubble.png" alt="">
+            <img src="bubble.png" alt="">
+            <img src="bubble.png" alt="">
+            <img src="bubble.png" alt="">
+
+
+        </div>
+    </div>
+</body>
+
+</html>
